@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: #464646;
+}
+
+
+:root {
+  --Main-color:#464646;
+  nav:#263136;
+
+}
+
+p{
+    color: white;
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-width: 8vh;
+font-family: unset;
+background-color: #263136;
+
+} 
+
+.logo{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    list-style-type: none;
+}
+
+
+.nav-links-li{
+    list-style: none;
+}
+
+ .nav-links a{
+     color:white;
+     text-decoration: none;
+     letter-spacing: 3px;
+     font-weight: bold;
+     font-size: 14px;
+   
+ }
+
+ 
+
+
+ .burger{
+     display: none;
+     cursor: pointer;
+ }
+
+ .burger div{
+     width: 25px;
+     height: 3px;
+     background-color: rgb(253, 253, 253);
+     margin: 5px;
+ }
+
+
+ @media screen and (max-width: 1024px)
+ {
+    .nav-links{
+        width: 60%;
+    }
+    
+
+ }
+
+ @media screen and (max-width: 768px)
+ {
+
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: rgb(236, 236, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+		width: 50%;
+		
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in
+    } 
+    
+
+.nav-links li {
+    opacity: 0
+    ;
+}
+.burger{
+    display: block;
+}
+
+ }
+
+
+.nav.active{
+    transform: translateX(0%);
+}
+
+@keyframes .nav-limkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to{
+
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+} 
+
+
+
+
+/*Front-page mobile*/
+h3{
+	color: white;
+}
+h2{
+color: white;
+}
+.main-about{
+	width: 90%;
+    margin: auto;
+    max-width: 1000px;
+}
+.h1-about{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.h2-hero{
+	display: flex;
+    align-items: center;
+	background-image: url(/media/ole-redigert.png);
+	background-size: cover;
+	height: 300px;
+	
+}
+
+.hero-main{
+    width: 100%;
+}
+
+.green-about{
+	color: #92c5ab;
+	font-size: 20px;
+}
+.about-text{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+.my-serv{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer-all{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+ 
+.footer-all .footer-left,
+.footer-all .footer-center,
+.footer-all .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+ 
+.footer-all .footer-left{
+width: 40%;
+}
+ 
+.footer-all h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-all h3 span{
+	color:  lightblue;
+}
+  
+.footer-all .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-all .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-all .footer-museum-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-all .footer-center{
+	width: 35%;
+}
+ 
+.footer-all .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-all .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-all .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-all .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-all .footer-center p a{
+	color: lightblue;
+	text-decoration: none;;
+}
+ 
+.footer-all .footer-right{
+	width: 20%;
+}
+ 
+.footer-all .footer-museum-about{
+	line-height: 35px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-all .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+ 
+.footer-all .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-all .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+@media (max-width: 880px) {
+    
+    .footer-all{
+		font: bold 14px sans-serif;
+	
+    }
+    
+	.footer-all .footer-left,
+	.footer-all .footer-center,
+	.footer-all .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 	.footer-all .footer-center i{
+		margin-left: 0;
+    }  
+    }
